@@ -1,0 +1,247 @@
+<!-- The above code is an HTML document for a personal portfolio website. It includes sections for the
+header, about me, services, portfolio, and contact information. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Boobalan </span> <br> From Namakkal</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------about---------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+
+                    <img src="./images/boobalan s.jpg">
+
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <p>With a strong foundation in HTML, CSS,
+                        Bootstrap, and JavaScript, and hands-on
+                        experience with modern library like React, I am
+                        an aspiring front-end developer passionate
+                        about creating responsive and user-friendly
+                        web applications. I am continually learning new
+                        technologies and eager to contribute to a
+                        dynamic team to build innovative digital
+                        solutions.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Front-End Developer</span><br> Web interfaces</li>
+                            <li><span>Website Development</span><br>Web Designing</li>
+                            <li><span>Web Development</span><br>Building Shop Website</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2020
+                                </span><br>BHARATHI HIGHER SECONDARY SCHOOL
+                            </li>
+                            <li><span>2020 - 2023</span><br>THIRUVALLUVAR GOVERNMENT ARTS COLLEGE IN BA ECONOMICS
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!----------------------Services---------------------->
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+
+                    <h2>Web Design</h2>
+                    <p>
+                        <p>Creative and detail-oriented Web Designer with a strong foundation in HTML, CSS, and modern
+                            design tools such as Adobe Photoshop and Figma. Recently graduated with a degree in Graphic
+                            Design and hands-on experience in creating visually appealing and user-friendly websites
+                            through academic projects and freelance work.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Front-End Developer</h2>
+                    <p>
+                        <p>Enthusiastic and detail-oriented Front-End Developer with a solid foundation in HTML, CSS,
+                            and JavaScript, complemented by hands-on experience in building responsive and interactive
+                            web applications through coursework and personal projects.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Developer</h2>
+                    <p>Motivated and dedicated Web Developer with a strong foundation in HTML, CSS, JavaScript, and
+                        modern web development frameworks. Recently graduated with a Bachelor's degree in Computer
+                        Science, with hands-on experience gained through academic projects and personal initiatives.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------------------Portfolio---------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media Website</h3>
+                        <p>The app connects you yo the talented pepole around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>Media website</h3>
+                        <p>The app connects you yo the talented pepole around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>Onlibe Shopping Website</h3>
+                        <p>The app connects you yo the talented pepole around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn">See more </a>
+        </div>
+    </div>
+
+
+    <!----------------------Contact---------------------->
+
+    <div id="contact">
+
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bboobalan379@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>95666555083</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/S.Boobalan CV Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2022 BBoobalan. <i class="fa-solid fa-heart"></i>All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <!----------------------about skills script---------------------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+    <!----------------------Menu script---------------------->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
